@@ -1,0 +1,11 @@
+Logging startet at: Tue Mar 13 13:39:43 2018
+
+ 
+****** Errors start here: ******** 
+ 
+****** Errors end here! ******** 
+ 
+ 
+Logging ended at: Tue Mar 13 13:39:43 2018
+
+ 

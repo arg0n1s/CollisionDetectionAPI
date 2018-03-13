@@ -7,7 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="D:/Basti/Documents/Eclipse Workspace/CollisionDetectionCLibraryWrapper/jni binaries"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CollisionDetectionCLibraryWrapper/c++ binaries/x64/Debug"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
