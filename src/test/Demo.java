@@ -17,7 +17,7 @@ public class Demo {
 		collisionLib.addShapeSpecification("sType1", ShapeType.Sphere, 1.0);
 		collisionLib.addAgentSpecification("aType1", "sType1");
 		// Initiate CollisionController object with MetaSpecs
-		collisionLib.initCollisionController();
+		collisionLib.initCollisionController(2.0, 4.0);
 		// Fill Simulation Container with Agents
 		collisionLib.createAgent("aType1", 0);
 		collisionLib.createAgent("aType1", 1);
