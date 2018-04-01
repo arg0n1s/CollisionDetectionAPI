@@ -7,7 +7,8 @@ public class CLibJavaWrapper {
 	public CLibJavaWrapper () {
 			System.loadLibrary("VTKVisualizationModule");
 			System.loadLibrary("CLibCollisionDetection");
-			initCollisionLibraryCLib();
+			String currentProjectDir = System.getProperty("user.dir");
+			initCollisionLibraryCLib(currentProjectDir + "\\logs");
 	}
 	
 	public void addSiteSpecification(String agentSpecID, int siteSpecID, CoordinateType coordType, Vector3D coordinates) {
@@ -149,8 +150,9 @@ public class CLibJavaWrapper {
 		default : return 0;
 		}
 	}
-	
 	private native void initCollisionLibraryCLib();
+	
+	private native void initCollisionLibraryCLib(String errorLogPath);
 	
 	private native void addSiteSpecificationCLib(String agentSpecID, int siteSpecID, int coordType, double c1, double c2, double c3);
 	

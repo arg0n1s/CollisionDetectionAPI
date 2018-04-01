@@ -40,7 +40,6 @@ public class Demo {
 		// Construct OctTree from Cluster and show result
 		collisionLib.createOctTreeFromCluster(0);
 		collisionLib.showOctTree(0);
-
 	}
 
 }
