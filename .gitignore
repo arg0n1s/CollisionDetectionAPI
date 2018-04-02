@@ -4,7 +4,7 @@
 .mtj.tmp/
 
 # Ignore generated error log files
-
+/logs/*
 
 # Package Files #
 *.jar
