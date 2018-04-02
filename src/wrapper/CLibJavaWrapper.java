@@ -54,20 +54,11 @@ public class CLibJavaWrapper {
 	}
 	
 	public Vector3D getAgentPosition(int agentID) {
-		double x = 0;
-		double y = 0;
-		double z = 0;
-		getAgentPositionCLib(agentID, x, y, z);
-		return new Vector3D(x, y, z);
+		return new Vector3D(getAgentPositionCLib(agentID, 3));
 	}
 	
 	public Quaternion getAgentRotation(int agentID) {
-		double w = 0;
-		double x = 0;
-		double y = 0;
-		double z = 0;
-		getAgentRotationCLib(agentID, w, x, y, z);
-		return new Quaternion(w, x, y, z);
+		return new Quaternion(getAgentRotationCLib(agentID, 4));
 	}
 	
 	public void connectAgents(int agentID1, int agentID2, int siteID1, int siteID2) {
@@ -178,9 +169,9 @@ public class CLibJavaWrapper {
 	
 	private native void rotateAgentCLib(int agentID, double w, double x, double y, double z);
 	
-	private native void getAgentPositionCLib(int agentID, double x, double y, double z);
+	private native double[] getAgentPositionCLib(int agentID, int dimensions);
 	
-	private native void getAgentRotationCLib(int agentID, double w, double x, double y, double z);
+	private native double[] getAgentRotationCLib(int agentID, int dimensions);
 	
 	private native void connectAgentsCLib(int agentID1, int agentID2, int siteID1, int siteID2);
 	

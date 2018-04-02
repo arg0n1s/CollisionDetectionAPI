@@ -7,6 +7,11 @@ public class Quaternion extends Vector3D {
 		this.w = w;
 	}
 	
+	public Quaternion(double[] quat) {
+		super(quat[1], quat[2], quat[3]);
+		this.w = quat[0];
+	}
+	
 	@Override
 	public String toString() {
 		return "["+w+", "+x+", "+y+", "+z+"]";

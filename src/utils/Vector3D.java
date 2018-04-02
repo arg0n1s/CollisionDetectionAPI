@@ -8,6 +8,12 @@ public class Vector3D {
 		this.z = z;
 	}
 	
+	public Vector3D(double[] vec) {
+		this.x = vec[0];
+		this.y = vec[1];
+		this.z = vec[2];
+	}
+	
 	@Override
 	public String toString() {
 		return "["+x+", "+y+", "+z+"]";
